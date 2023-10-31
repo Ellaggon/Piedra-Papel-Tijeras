@@ -16,7 +16,7 @@ init_imagenes();
 document.addEventListener("click", (e) => {
   if(e.target == btn_piedra){
     Opcion_jugador = 0;
-    img_usuario.src = "/img/Piedra.png";
+    img_usuario.src = "./public/img/Piedra.png";
   }
   if(e.target == btn_papel){
     Opcion_jugador = 1;
