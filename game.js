@@ -20,11 +20,11 @@ document.addEventListener("click", (e) => {
   }
   if(e.target == btn_papel){
     Opcion_jugador = 1;
-    img_usuario.src = "/img/Papel.png";
+    img_usuario.src = "./public/img/Papel.png";
   }
   if(e.target == btn_tijeras){
     Opcion_jugador = 2;
-    img_usuario.src = "/img/Tijeras.png";
+    img_usuario.src = "./public/img/Tijeras.png";
   }
   if(e.target == btn_iniciar){
     Menu = "inicio";
@@ -45,9 +45,9 @@ switch (Menu) {
 }
 
 function init_imagenes() {
-    btn_piedra.style.backgroundImage = " url('/img/Piedra.png')";
-    btn_papel.style.backgroundImage = " url('/img/Papel.png')";
-    btn_tijeras.style.backgroundImage = "url('/img/Tijeras.png')";
+    btn_piedra.style.backgroundImage = " url('./public/img/Piedra.png')";
+    btn_papel.style.backgroundImage = " url('./public/img/Papel.png')";
+    btn_tijeras.style.backgroundImage = "url('./public/img/Tijeras.png')";
 }
 
 function num_aleatorio() {
@@ -87,10 +87,10 @@ function game(opcion_jugador, opcion_cpu) {
 
 function display_opcion_cpu(opcion) {
     if (opcion === 0) {
-        img_cpu.src = "./img/Piedra.png";
+        img_cpu.src = "./public/img/Piedra.png";
     } else if (opcion === 1) {
-        img_cpu.src = "./img/Papel.png";
+        img_cpu.src = "./public/img/Papel.png";
     } else {
-        img_cpu.src = "./img/Tijeras.png";
+        img_cpu.src = "./public/img/Tijeras.png";
     }
 }
