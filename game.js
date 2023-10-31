@@ -16,11 +16,11 @@ init_imagenes();
 document.addEventListener("click", (e) => {
   if(e.target == btn_piedra){
     Opcion_jugador = 0;
-    img_usuario.src = "/public/img/Piedra.png";
+    img_usuario.src = "./public/img/Piedra.png";
   }
   if(e.target == btn_papel){
     Opcion_jugador = 1;
-    img_usuario.src = "../img/Papel.png";
+    img_usuario.src = "./public/img/Papel.png";
   }
   if(e.target == btn_tijeras){
     Opcion_jugador = 2;
